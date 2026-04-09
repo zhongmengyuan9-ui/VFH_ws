@@ -24,10 +24,10 @@ class DepthVFHController(Node):
 
         # VFH / control parameters
         self.declare_parameter('control_rate_hz', 12.0)
-        self.declare_parameter('sector_angle_deg', 5.0)
+        self.declare_parameter('sector_angle_deg', 10.0)
         self.declare_parameter('view_angle_deg', 75.0)
-        self.declare_parameter('min_depth', 0.25)
-        self.declare_parameter('max_depth', 3.5)
+        self.declare_parameter('min_depth', 0.4)
+        self.declare_parameter('max_depth', 5.0)
         self.declare_parameter('inflation_max_range', 2.5)
         self.declare_parameter('robot_radius', 0.28)
         self.declare_parameter('safety_margin', 0.12)

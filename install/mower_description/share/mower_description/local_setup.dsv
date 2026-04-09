@@ -1,1 +1,2 @@
-/home/q/Algorithm_research/VFH_ws/build/mower_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/mower_description/environment/ament_prefix_path.sh
+source;share/mower_description/environment/path.sh

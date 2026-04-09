@@ -1,1 +1,0 @@
-/home/q/Algorithm_research/VFH_ws/src/mower_vfh/launch/vfh_gazebo.launch.py
