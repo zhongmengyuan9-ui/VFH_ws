@@ -1,0 +1,33 @@
+[0.015s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar:/home/q/Algorithm_research/VFH_ws/install/mower_vfh:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_description -- -j24 -l24
+[0.059s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar:/home/q/Algorithm_research/VFH_ws/install/mower_vfh:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_description -- -j24 -l24
+[0.070s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar:/home/q/Algorithm_research/VFH_ws/install/mower_vfh:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_description
+[0.077s] -- Install configuration: ""
+[0.077s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/mower_gazebo.launch.py
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/__pycache__
+[0.078s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/__pycache__/mower_gazebo.launch.cpython-310.pyc
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/urdf
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/urdf/mower.urdf
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/room_world.world
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/room_world_open.world
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/mower_world.world
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/config
+[0.078s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/config/rviz
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/config/rviz/mower_gazebo.rviz
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/package_run_dependencies/mower_description
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/parent_prefix_path/mower_description
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/ament_prefix_path.sh
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/ament_prefix_path.dsv
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/path.sh
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/path.dsv
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.bash
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.sh
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.zsh
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.dsv
+[0.079s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/package.dsv
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/packages/mower_description
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/cmake/mower_descriptionConfig.cmake
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/cmake/mower_descriptionConfig-version.cmake
+[0.079s] -- Up-to-date: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/package.xml
+[0.081s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar:/home/q/Algorithm_research/VFH_ws/install/mower_vfh:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_description

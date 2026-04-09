@@ -26,27 +26,30 @@ class DepthVFHController(Node):
         self.declare_parameter('control_rate_hz', 12.0)
         self.declare_parameter('sector_angle_deg', 10.0)
         self.declare_parameter('view_angle_deg', 75.0)
-        self.declare_parameter('min_depth', 0.4)
+        self.declare_parameter('min_depth', 0.45)
         self.declare_parameter('max_depth', 5.0)
-        self.declare_parameter('inflation_max_range', 2.5)
+        self.declare_parameter('inflation_max_range', 1.8)
         self.declare_parameter('robot_radius', 0.28)
-        self.declare_parameter('safety_margin', 0.12)
+        self.declare_parameter('safety_margin', 0.08)
         self.declare_parameter('camera_x_offset', 0.22)
-        self.declare_parameter('pixel_step_u', 4)
-        self.declare_parameter('pixel_step_v', 6)
-        self.declare_parameter('scan_v_start_ratio', 0.35)
-        self.declare_parameter('scan_v_end_ratio', 0.65)
+        self.declare_parameter('pixel_step_u', 6)
+        self.declare_parameter('pixel_step_v', 8)
+        self.declare_parameter('scan_v_start_ratio', 0.20)
+        self.declare_parameter('scan_v_end_ratio', 0.50)
         self.declare_parameter('goal_tolerance', 0.25)
         self.declare_parameter('goal_slowdown_dist', 1.0)
-        self.declare_parameter('stop_distance', 0.45)
+        self.declare_parameter('stop_distance', 0.5)
         self.declare_parameter('max_linear_speed', 0.40)
         self.declare_parameter('min_linear_speed', 0.05)
-        self.declare_parameter('max_angular_speed', 1.2)
-        self.declare_parameter('heading_kp', 1.8)
-        self.declare_parameter('turn_in_place_angle_deg', 50.0)
-        self.declare_parameter('cost_goal', 1.0)
-        self.declare_parameter('cost_smooth', 0.35)
-        self.declare_parameter('cost_clearance', 0.25)
+        self.declare_parameter('max_angular_speed', 0.7)
+        self.declare_parameter('heading_kp', 0.55)
+        self.declare_parameter('turn_in_place_angle_deg', 55.0)
+        self.declare_parameter('cost_goal', 1.5)
+        self.declare_parameter('cost_smooth', 0.6)
+        self.declare_parameter('cost_clearance', 0.2)
+        self.declare_parameter('switch_hysteresis', 0.04)
+        self.declare_parameter('max_angular_accel', 2.4)
+        self.declare_parameter('hold_heading_max_deg', 35.0)
 
         self.depth_topic = self.get_parameter('depth_topic').value
         self.camera_info_topic = self.get_parameter('camera_info_topic').value
@@ -78,6 +81,9 @@ class DepthVFHController(Node):
         self.cost_goal = float(self.get_parameter('cost_goal').value)
         self.cost_smooth = float(self.get_parameter('cost_smooth').value)
         self.cost_clearance = float(self.get_parameter('cost_clearance').value)
+        self.switch_hysteresis = float(self.get_parameter('switch_hysteresis').value)
+        self.max_angular_accel = float(self.get_parameter('max_angular_accel').value)
+        self.hold_heading_max = math.radians(float(self.get_parameter('hold_heading_max_deg').value))
 
         self.num_sectors = max(5, int(round((2.0 * self.view_angle) / self.sector_angle)))
         self.sector_angle = (2.0 * self.view_angle) / float(self.num_sectors)
@@ -101,6 +107,8 @@ class DepthVFHController(Node):
         self.goal_frame: Optional[str] = None
 
         self.last_selected_heading = 0.0
+        self.last_selected_sector_idx: Optional[int] = None
+        self.last_angular_cmd = 0.0
 
         sensor_qos = QoSProfile(
             reliability=QoSReliabilityPolicy.BEST_EFFORT,
@@ -181,22 +189,28 @@ class DepthVFHController(Node):
         sector_dist = self.compute_sector_distance(self.latest_depth)
         blocked = self.compute_blocked_sectors(sector_dist)
 
-        selected_heading, selected_dist = self.select_heading(
+        selected_heading, selected_dist, selected_sector_idx = self.select_heading(
             goal_heading_robot,
             sector_dist,
             blocked,
         )
         self.last_selected_heading = selected_heading
+        self.last_selected_sector_idx = selected_sector_idx
 
         cmd = Twist()
 
         if np.all(blocked):
             cmd.linear.x = 0.0
             cmd.angular.z = math.copysign(self.max_angular_speed * 0.7, goal_heading_robot if abs(goal_heading_robot) > 1e-4 else 1.0)
+            self.last_angular_cmd = cmd.angular.z
             self.cmd_pub.publish(cmd)
             return
 
-        cmd.angular.z = self.clamp(self.heading_kp * selected_heading, -self.max_angular_speed, self.max_angular_speed)
+        target_angular = self.clamp(self.heading_kp * selected_heading, -self.max_angular_speed, self.max_angular_speed)
+        dt = max(1e-3, 1.0 / self.control_rate_hz)
+        max_delta = self.max_angular_accel * dt
+        cmd.angular.z = self.clamp(target_angular, self.last_angular_cmd - max_delta, self.last_angular_cmd + max_delta)
+        self.last_angular_cmd = cmd.angular.z
 
         heading_factor = max(0.0, math.cos(abs(selected_heading)))
         clearance_factor = self.clamp((selected_dist - self.stop_distance) / max(1e-3, (self.max_depth - self.stop_distance)), 0.0, 1.0)
@@ -278,10 +292,12 @@ class DepthVFHController(Node):
         goal_heading_robot: float,
         sector_dist: np.ndarray,
         blocked: np.ndarray,
-    ) -> Tuple[float, float]:
+    ) -> Tuple[float, float, int]:
         free_idx = np.where(~blocked)[0]
         if free_idx.size == 0:
-            return math.copysign(self.view_angle, goal_heading_robot if abs(goal_heading_robot) > 1e-4 else 1.0), 0.0
+            fallback = math.copysign(self.view_angle, goal_heading_robot if abs(goal_heading_robot) > 1e-4 else 1.0)
+            fallback_idx = int(np.argmin(np.abs(self.sector_centers - fallback)))
+            return fallback, 0.0, fallback_idx
 
         free_angles = self.sector_centers[free_idx]
 
@@ -295,12 +311,30 @@ class DepthVFHController(Node):
 
         total_cost = self.cost_goal * goal_cost + self.cost_smooth * smooth_cost + self.cost_clearance * clearance_cost
         best_local = int(np.argmin(total_cost))
+        best_idx = int(free_idx[best_local])
 
-        best_idx = free_idx[best_local]
-        selected_dist = float(sector_dist[best_idx]) if np.isfinite(sector_dist[best_idx]) else self.max_depth
-        return float(self.sector_centers[best_idx]), selected_dist
+        selected_idx = best_idx
+        if self.last_selected_sector_idx is not None and not blocked[self.last_selected_sector_idx]:
+            prev_local = np.where(free_idx == self.last_selected_sector_idx)[0]
+            if prev_local.size > 0:
+                prev_heading = float(self.sector_centers[self.last_selected_sector_idx])
+                best_heading = float(self.sector_centers[best_idx])
+                prev_cost = float(total_cost[int(prev_local[0])])
+                best_cost = float(total_cost[best_local])
+                can_hold_heading = (
+                    abs(prev_heading) <= self.hold_heading_max
+                    and abs(best_heading) <= self.hold_heading_max
+                )
+                if can_hold_heading and best_cost + self.switch_hysteresis >= prev_cost:
+                    selected_idx = int(self.last_selected_sector_idx)
+
+        selected_dist = float(sector_dist[selected_idx]) if np.isfinite(sector_dist[selected_idx]) else self.max_depth
+        return float(self.sector_centers[selected_idx]), selected_dist, selected_idx
 
     def publish_stop(self) -> None:
+        self.last_angular_cmd = 0.0
+        self.last_selected_heading = 0.0
+        self.last_selected_sector_idx = None
         self.cmd_pub.publish(Twist())
 
     @staticmethod
