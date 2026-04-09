@@ -1,0 +1,26 @@
+[30.477s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/build/mower_vfh/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/q/Algorithm_research/VFH_ws/build/mower_vfh/build --no-deps symlink_data
+[30.665s] running develop
+[30.781s] running egg_info
+[30.781s] creating mower_vfh.egg-info
+[30.781s] writing mower_vfh.egg-info/PKG-INFO
+[30.781s] writing dependency_links to mower_vfh.egg-info/dependency_links.txt
+[30.781s] writing entry points to mower_vfh.egg-info/entry_points.txt
+[30.781s] writing requirements to mower_vfh.egg-info/requires.txt
+[30.782s] writing top-level names to mower_vfh.egg-info/top_level.txt
+[30.782s] writing manifest file 'mower_vfh.egg-info/SOURCES.txt'
+[30.782s] reading manifest file 'mower_vfh.egg-info/SOURCES.txt'
+[30.783s] writing manifest file 'mower_vfh.egg-info/SOURCES.txt'
+[30.784s] running build_ext
+[30.784s] Creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/python3.10/site-packages/mower-vfh.egg-link (link to .)
+[30.784s] Installing depth_vfh_controller script to /home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/mower_vfh
+[30.785s] 
+[30.785s] Installed /home/q/Algorithm_research/VFH_ws/build/mower_vfh
+[30.785s] running symlink_data
+[30.785s] creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index
+[30.785s] creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index
+[30.785s] creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/packages
+[30.785s] symbolically linking /home/q/Algorithm_research/VFH_ws/build/mower_vfh/resource/mower_vfh -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/packages
+[30.785s] symbolically linking /home/q/Algorithm_research/VFH_ws/build/mower_vfh/package.xml -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh
+[30.785s] creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/launch
+[30.785s] symbolically linking /home/q/Algorithm_research/VFH_ws/build/mower_vfh/launch/vfh_gazebo.launch.py -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/launch
+[30.803s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh' returned '0': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/build/mower_vfh/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/q/Algorithm_research/VFH_ws/build/mower_vfh/build --no-deps symlink_data

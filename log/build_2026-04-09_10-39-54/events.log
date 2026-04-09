@@ -1,0 +1,751 @@
+[0.000000] (-) TimerEvent: {}
+[0.000069] (mower_description) JobQueued: {'identifier': 'mower_description', 'dependencies': OrderedDict()}
+[0.000200] (mower_vfh) JobQueued: {'identifier': 'mower_vfh', 'dependencies': OrderedDict([('mower_description', '/home/q/Algorithm_research/VFH_ws/install/mower_description')])}
+[0.000356] (mower_description) JobStarted: {'identifier': 'mower_description'}
+[0.007316] (mower_description) JobProgress: {'identifier': 'mower_description', 'progress': 'cmake'}
+[0.008030] (mower_description) Command: {'cmd': ['/usr/bin/cmake', '/home/q/Algorithm_research/VFH_ws/src/mower_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_description'], 'cwd': '/home/q/Algorithm_research/VFH_ws/build/mower_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/q/Algorithm_research/VFH_ws'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'q'), ('LC_TIME', 'zh_CN.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","messagesFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/nls.messages.json","corruptMarkerFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","_cacheRoot":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_resolvedLanguagePackCoreLocation":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43","_corruptedFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/q/dev_ws/install/originbot_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/q'), ('CHROME_DESKTOP', 'code.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-2271aa5c-1.11-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2902'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf'), ('COLORTERM', ''), ('NODE_TLS_REJECT_UNAUTHORIZED', '0'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/q/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'q'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'q'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/q/.local/bin:/home/q/.codex/tmp/arg0/codex-arg0YWRRMN:/opt/ros/humble/bin:/home/q/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/q/.vscode/extensions/openai.chatgpt-26.406.31014-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/HF-N-L-001687:@/tmp/.ICE-unix/2902,unix/HF-N-L-001687:/tmp/.ICE-unix/2902'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b0decd1d_2ac9_4244_a716_50e90290265a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.662'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019d7018-3ec9-72b3-866a-6c7c6246830a'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/q/Algorithm_research/VFH_ws/build/mower_description'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/q/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43'), ('CLUTTER_IM_MODULE', 'xim'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/q/dev_ws/install/originbot_viz/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_demo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_msgs/local/lib/python3.10/dist-packages:/home/q/dev_ws/install/originbot_gazebo_harmonic/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo_fortress/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_description/lib/python3.10/site-packages:/home/q/dev_ws/install/line_follower_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble'), ('VSCODE_PID', '94827')]), 'shell': False}
+[0.019852] (mower_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099887] (-) TimerEvent: {}
+[0.113593] (mower_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.122194] (mower_description) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[0.147163] (mower_description) StdoutLine: {'line': b'-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)\n'}
+[0.147388] (mower_description) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.161633] (mower_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.163252] (mower_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.167427] (mower_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.174280] (mower_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.181382] (mower_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199980] (-) TimerEvent: {}
+[0.204389] (mower_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.205678] (mower_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.219102] (mower_description) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.226653] (mower_description) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.240810] (mower_description) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.247351] (mower_description) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.257088] (mower_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.300081] (-) TimerEvent: {}
+[0.317666] (mower_description) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.338525] (mower_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.339879] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.344150] (mower_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.345137] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[0.349870] (mower_description) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[0.350001] (mower_description) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[0.357359] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[0.357541] (mower_description) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[0.357697] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[0.357765] (mower_description) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[0.357832] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[0.357896] (mower_description) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[0.357961] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[0.358025] (mower_description) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[0.358091] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[0.358153] (mower_description) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[0.358216] (mower_description) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[0.358292] (mower_description) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[0.400188] (-) TimerEvent: {}
+[0.443514] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.443770] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[0.444046] (mower_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[0.460006] (mower_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[0.468919] (mower_description) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.473038] (mower_description) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.488347] (mower_description) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.500265] (-) TimerEvent: {}
+[0.528380] (mower_description) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.542660] (mower_description) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.585513] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.586093] (mower_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[0.600338] (-) TimerEvent: {}
+[0.603590] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.609671] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.609912] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.610305] (mower_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[0.610393] (mower_description) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.610427] (mower_description) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.620676] (mower_description) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[0.620848] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[0.621226] (mower_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[0.621495] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.622302] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[0.622565] (mower_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[0.659821] (mower_description) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[0.683518] (mower_description) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[0.700447] (-) TimerEvent: {}
+[0.739430] (mower_description) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[0.758504] (mower_description) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[0.800572] (-) TimerEvent: {}
+[0.814083] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.814253] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.814534] (mower_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.815587] (mower_description) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[0.816619] (mower_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.888874] (mower_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.889093] (mower_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.889360] (mower_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.890439] (mower_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.891072] (mower_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.894246] (mower_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.896188] (mower_description) StdoutLine: {'line': b'-- Build files have been written to: /home/q/Algorithm_research/VFH_ws/build/mower_description\n'}
+[0.900627] (-) TimerEvent: {}
+[1.000798] (-) TimerEvent: {}
+[1.101023] (-) TimerEvent: {}
+[1.201233] (-) TimerEvent: {}
+[1.301395] (-) TimerEvent: {}
+[1.401573] (-) TimerEvent: {}
+[1.501774] (-) TimerEvent: {}
+[1.601985] (-) TimerEvent: {}
+[1.702177] (-) TimerEvent: {}
+[1.802352] (-) TimerEvent: {}
+[1.902508] (-) TimerEvent: {}
+[2.002672] (-) TimerEvent: {}
+[2.102865] (-) TimerEvent: {}
+[2.203063] (-) TimerEvent: {}
+[2.303244] (-) TimerEvent: {}
+[2.403419] (-) TimerEvent: {}
+[2.503646] (-) TimerEvent: {}
+[2.603925] (-) TimerEvent: {}
+[2.704197] (-) TimerEvent: {}
+[2.804419] (-) TimerEvent: {}
+[2.904622] (-) TimerEvent: {}
+[3.004867] (-) TimerEvent: {}
+[3.105127] (-) TimerEvent: {}
+[3.205369] (-) TimerEvent: {}
+[3.305632] (-) TimerEvent: {}
+[3.405862] (-) TimerEvent: {}
+[3.506111] (-) TimerEvent: {}
+[3.606406] (-) TimerEvent: {}
+[3.706642] (-) TimerEvent: {}
+[3.806902] (-) TimerEvent: {}
+[3.907118] (-) TimerEvent: {}
+[4.007382] (-) TimerEvent: {}
+[4.107658] (-) TimerEvent: {}
+[4.207946] (-) TimerEvent: {}
+[4.308235] (-) TimerEvent: {}
+[4.408582] (-) TimerEvent: {}
+[4.508831] (-) TimerEvent: {}
+[4.609117] (-) TimerEvent: {}
+[4.709416] (-) TimerEvent: {}
+[4.809720] (-) TimerEvent: {}
+[4.910012] (-) TimerEvent: {}
+[5.010284] (-) TimerEvent: {}
+[5.110549] (-) TimerEvent: {}
+[5.210804] (-) TimerEvent: {}
+[5.311056] (-) TimerEvent: {}
+[5.411290] (-) TimerEvent: {}
+[5.511477] (-) TimerEvent: {}
+[5.611705] (-) TimerEvent: {}
+[5.711916] (-) TimerEvent: {}
+[5.812114] (-) TimerEvent: {}
+[5.912338] (-) TimerEvent: {}
+[6.012602] (-) TimerEvent: {}
+[6.112836] (-) TimerEvent: {}
+[6.213052] (-) TimerEvent: {}
+[6.313326] (-) TimerEvent: {}
+[6.413620] (-) TimerEvent: {}
+[6.513892] (-) TimerEvent: {}
+[6.614149] (-) TimerEvent: {}
+[6.714466] (-) TimerEvent: {}
+[6.814780] (-) TimerEvent: {}
+[6.915093] (-) TimerEvent: {}
+[7.015406] (-) TimerEvent: {}
+[7.115637] (-) TimerEvent: {}
+[7.215953] (-) TimerEvent: {}
+[7.316304] (-) TimerEvent: {}
+[7.416595] (-) TimerEvent: {}
+[7.516923] (-) TimerEvent: {}
+[7.617282] (-) TimerEvent: {}
+[7.717587] (-) TimerEvent: {}
+[7.818017] (-) TimerEvent: {}
+[7.918420] (-) TimerEvent: {}
+[8.018770] (-) TimerEvent: {}
+[8.119242] (-) TimerEvent: {}
+[8.219467] (-) TimerEvent: {}
+[8.319667] (-) TimerEvent: {}
+[8.419906] (-) TimerEvent: {}
+[8.520241] (-) TimerEvent: {}
+[8.620510] (-) TimerEvent: {}
+[8.720825] (-) TimerEvent: {}
+[8.821133] (-) TimerEvent: {}
+[8.921456] (-) TimerEvent: {}
+[9.021703] (-) TimerEvent: {}
+[9.121903] (-) TimerEvent: {}
+[9.222158] (-) TimerEvent: {}
+[9.322456] (-) TimerEvent: {}
+[9.422702] (-) TimerEvent: {}
+[9.522976] (-) TimerEvent: {}
+[9.623321] (-) TimerEvent: {}
+[9.723588] (-) TimerEvent: {}
+[9.823856] (-) TimerEvent: {}
+[9.924114] (-) TimerEvent: {}
+[10.024392] (-) TimerEvent: {}
+[10.124636] (-) TimerEvent: {}
+[10.224881] (-) TimerEvent: {}
+[10.325094] (-) TimerEvent: {}
+[10.425330] (-) TimerEvent: {}
+[10.525667] (-) TimerEvent: {}
+[10.625960] (-) TimerEvent: {}
+[10.726286] (-) TimerEvent: {}
+[10.826556] (-) TimerEvent: {}
+[10.926824] (-) TimerEvent: {}
+[11.027110] (-) TimerEvent: {}
+[11.127377] (-) TimerEvent: {}
+[11.227680] (-) TimerEvent: {}
+[11.327924] (-) TimerEvent: {}
+[11.428142] (-) TimerEvent: {}
+[11.528390] (-) TimerEvent: {}
+[11.628669] (-) TimerEvent: {}
+[11.728976] (-) TimerEvent: {}
+[11.829247] (-) TimerEvent: {}
+[11.929587] (-) TimerEvent: {}
+[12.029882] (-) TimerEvent: {}
+[12.130109] (-) TimerEvent: {}
+[12.230379] (-) TimerEvent: {}
+[12.330666] (-) TimerEvent: {}
+[12.430934] (-) TimerEvent: {}
+[12.531210] (-) TimerEvent: {}
+[12.631481] (-) TimerEvent: {}
+[12.731738] (-) TimerEvent: {}
+[12.831954] (-) TimerEvent: {}
+[12.932249] (-) TimerEvent: {}
+[13.032491] (-) TimerEvent: {}
+[13.132721] (-) TimerEvent: {}
+[13.233003] (-) TimerEvent: {}
+[13.333279] (-) TimerEvent: {}
+[13.433537] (-) TimerEvent: {}
+[13.533796] (-) TimerEvent: {}
+[13.634035] (-) TimerEvent: {}
+[13.734298] (-) TimerEvent: {}
+[13.834546] (-) TimerEvent: {}
+[13.934820] (-) TimerEvent: {}
+[14.035029] (-) TimerEvent: {}
+[14.135438] (-) TimerEvent: {}
+[14.235729] (-) TimerEvent: {}
+[14.336006] (-) TimerEvent: {}
+[14.436282] (-) TimerEvent: {}
+[14.536514] (-) TimerEvent: {}
+[14.636782] (-) TimerEvent: {}
+[14.737057] (-) TimerEvent: {}
+[14.837340] (-) TimerEvent: {}
+[14.937544] (-) TimerEvent: {}
+[15.037732] (-) TimerEvent: {}
+[15.138043] (-) TimerEvent: {}
+[15.238322] (-) TimerEvent: {}
+[15.338575] (-) TimerEvent: {}
+[15.438822] (-) TimerEvent: {}
+[15.539045] (-) TimerEvent: {}
+[15.639265] (-) TimerEvent: {}
+[15.739490] (-) TimerEvent: {}
+[15.839729] (-) TimerEvent: {}
+[15.939990] (-) TimerEvent: {}
+[16.040264] (-) TimerEvent: {}
+[16.140521] (-) TimerEvent: {}
+[16.240781] (-) TimerEvent: {}
+[16.341053] (-) TimerEvent: {}
+[16.441316] (-) TimerEvent: {}
+[16.541515] (-) TimerEvent: {}
+[16.641743] (-) TimerEvent: {}
+[16.741981] (-) TimerEvent: {}
+[16.842254] (-) TimerEvent: {}
+[16.942455] (-) TimerEvent: {}
+[17.042655] (-) TimerEvent: {}
+[17.142885] (-) TimerEvent: {}
+[17.243092] (-) TimerEvent: {}
+[17.343392] (-) TimerEvent: {}
+[17.443702] (-) TimerEvent: {}
+[17.543969] (-) TimerEvent: {}
+[17.644258] (-) TimerEvent: {}
+[17.744509] (-) TimerEvent: {}
+[17.844740] (-) TimerEvent: {}
+[17.945015] (-) TimerEvent: {}
+[18.045252] (-) TimerEvent: {}
+[18.145533] (-) TimerEvent: {}
+[18.245820] (-) TimerEvent: {}
+[18.346090] (-) TimerEvent: {}
+[18.446366] (-) TimerEvent: {}
+[18.546619] (-) TimerEvent: {}
+[18.646913] (-) TimerEvent: {}
+[18.747184] (-) TimerEvent: {}
+[18.847483] (-) TimerEvent: {}
+[18.947754] (-) TimerEvent: {}
+[19.047979] (-) TimerEvent: {}
+[19.148273] (-) TimerEvent: {}
+[19.248567] (-) TimerEvent: {}
+[19.348833] (-) TimerEvent: {}
+[19.449082] (-) TimerEvent: {}
+[19.549267] (-) TimerEvent: {}
+[19.649413] (-) TimerEvent: {}
+[19.749560] (-) TimerEvent: {}
+[19.849737] (-) TimerEvent: {}
+[19.949897] (-) TimerEvent: {}
+[20.050071] (-) TimerEvent: {}
+[20.150256] (-) TimerEvent: {}
+[20.250406] (-) TimerEvent: {}
+[20.350617] (-) TimerEvent: {}
+[20.450862] (-) TimerEvent: {}
+[20.551084] (-) TimerEvent: {}
+[20.651325] (-) TimerEvent: {}
+[20.751586] (-) TimerEvent: {}
+[20.851827] (-) TimerEvent: {}
+[20.952063] (-) TimerEvent: {}
+[21.052302] (-) TimerEvent: {}
+[21.152503] (-) TimerEvent: {}
+[21.252751] (-) TimerEvent: {}
+[21.353016] (-) TimerEvent: {}
+[21.453312] (-) TimerEvent: {}
+[21.553585] (-) TimerEvent: {}
+[21.653874] (-) TimerEvent: {}
+[21.754130] (-) TimerEvent: {}
+[21.854433] (-) TimerEvent: {}
+[21.954721] (-) TimerEvent: {}
+[22.054965] (-) TimerEvent: {}
+[22.155186] (-) TimerEvent: {}
+[22.255471] (-) TimerEvent: {}
+[22.355741] (-) TimerEvent: {}
+[22.456010] (-) TimerEvent: {}
+[22.556303] (-) TimerEvent: {}
+[22.656569] (-) TimerEvent: {}
+[22.756821] (-) TimerEvent: {}
+[22.857075] (-) TimerEvent: {}
+[22.957319] (-) TimerEvent: {}
+[23.057550] (-) TimerEvent: {}
+[23.157759] (-) TimerEvent: {}
+[23.258011] (-) TimerEvent: {}
+[23.358333] (-) TimerEvent: {}
+[23.458582] (-) TimerEvent: {}
+[23.558884] (-) TimerEvent: {}
+[23.659147] (-) TimerEvent: {}
+[23.759415] (-) TimerEvent: {}
+[23.859744] (-) TimerEvent: {}
+[23.960047] (-) TimerEvent: {}
+[24.060310] (-) TimerEvent: {}
+[24.160497] (-) TimerEvent: {}
+[24.260736] (-) TimerEvent: {}
+[24.361038] (-) TimerEvent: {}
+[24.461363] (-) TimerEvent: {}
+[24.561676] (-) TimerEvent: {}
+[24.661958] (-) TimerEvent: {}
+[24.762253] (-) TimerEvent: {}
+[24.862509] (-) TimerEvent: {}
+[24.962757] (-) TimerEvent: {}
+[25.062984] (-) TimerEvent: {}
+[25.163202] (-) TimerEvent: {}
+[25.263513] (-) TimerEvent: {}
+[25.363808] (-) TimerEvent: {}
+[25.464061] (-) TimerEvent: {}
+[25.564312] (-) TimerEvent: {}
+[25.664549] (-) TimerEvent: {}
+[25.764829] (-) TimerEvent: {}
+[25.865095] (-) TimerEvent: {}
+[25.965385] (-) TimerEvent: {}
+[26.065616] (-) TimerEvent: {}
+[26.165838] (-) TimerEvent: {}
+[26.266167] (-) TimerEvent: {}
+[26.366451] (-) TimerEvent: {}
+[26.466686] (-) TimerEvent: {}
+[26.566927] (-) TimerEvent: {}
+[26.667176] (-) TimerEvent: {}
+[26.767451] (-) TimerEvent: {}
+[26.867703] (-) TimerEvent: {}
+[26.967951] (-) TimerEvent: {}
+[27.068170] (-) TimerEvent: {}
+[27.168343] (-) TimerEvent: {}
+[27.268504] (-) TimerEvent: {}
+[27.368687] (-) TimerEvent: {}
+[27.468885] (-) TimerEvent: {}
+[27.569155] (-) TimerEvent: {}
+[27.669450] (-) TimerEvent: {}
+[27.769690] (-) TimerEvent: {}
+[27.869875] (-) TimerEvent: {}
+[27.970100] (-) TimerEvent: {}
+[28.070345] (-) TimerEvent: {}
+[28.170565] (-) TimerEvent: {}
+[28.270874] (-) TimerEvent: {}
+[28.371154] (-) TimerEvent: {}
+[28.471412] (-) TimerEvent: {}
+[28.571663] (-) TimerEvent: {}
+[28.671928] (-) TimerEvent: {}
+[28.772281] (-) TimerEvent: {}
+[28.872578] (-) TimerEvent: {}
+[28.973191] (-) TimerEvent: {}
+[29.073462] (-) TimerEvent: {}
+[29.173677] (-) TimerEvent: {}
+[29.273934] (-) TimerEvent: {}
+[29.374259] (-) TimerEvent: {}
+[29.474476] (-) TimerEvent: {}
+[29.574805] (-) TimerEvent: {}
+[29.675097] (-) TimerEvent: {}
+[29.775398] (-) TimerEvent: {}
+[29.875655] (-) TimerEvent: {}
+[29.975919] (-) TimerEvent: {}
+[30.029598] (mower_description) CommandEnded: {'returncode': 0}
+[30.030265] (mower_description) JobProgress: {'identifier': 'mower_description', 'progress': 'build'}
+[30.030998] (mower_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/q/Algorithm_research/VFH_ws/build/mower_description', '--', '-j24', '-l24'], 'cwd': '/home/q/Algorithm_research/VFH_ws/build/mower_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/q/Algorithm_research/VFH_ws'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'q'), ('LC_TIME', 'zh_CN.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","messagesFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/nls.messages.json","corruptMarkerFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","_cacheRoot":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_resolvedLanguagePackCoreLocation":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43","_corruptedFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/q/dev_ws/install/originbot_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/q'), ('CHROME_DESKTOP', 'code.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-2271aa5c-1.11-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2902'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf'), ('COLORTERM', ''), ('NODE_TLS_REJECT_UNAUTHORIZED', '0'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/q/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'q'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'q'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/q/.local/bin:/home/q/.codex/tmp/arg0/codex-arg0YWRRMN:/opt/ros/humble/bin:/home/q/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/q/.vscode/extensions/openai.chatgpt-26.406.31014-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/HF-N-L-001687:@/tmp/.ICE-unix/2902,unix/HF-N-L-001687:/tmp/.ICE-unix/2902'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b0decd1d_2ac9_4244_a716_50e90290265a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.662'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019d7018-3ec9-72b3-866a-6c7c6246830a'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/q/Algorithm_research/VFH_ws/build/mower_description'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/q/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43'), ('CLUTTER_IM_MODULE', 'xim'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/q/dev_ws/install/originbot_viz/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_demo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_msgs/local/lib/python3.10/dist-packages:/home/q/dev_ws/install/originbot_gazebo_harmonic/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo_fortress/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_description/lib/python3.10/site-packages:/home/q/dev_ws/install/line_follower_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble'), ('VSCODE_PID', '94827')]), 'shell': False}
+[30.067041] (mower_description) CommandEnded: {'returncode': 0}
+[30.067644] (mower_description) JobProgress: {'identifier': 'mower_description', 'progress': 'install'}
+[30.075360] (mower_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/q/Algorithm_research/VFH_ws/build/mower_description'], 'cwd': '/home/q/Algorithm_research/VFH_ws/build/mower_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/q/Algorithm_research/VFH_ws'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'q'), ('LC_TIME', 'zh_CN.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","messagesFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/nls.messages.json","corruptMarkerFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","_cacheRoot":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_resolvedLanguagePackCoreLocation":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43","_corruptedFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"}'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/q/dev_ws/install/originbot_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/q'), ('CHROME_DESKTOP', 'code.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-2271aa5c-1.11-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2902'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf'), ('COLORTERM', ''), ('NODE_TLS_REJECT_UNAUTHORIZED', '0'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/q/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'q'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'q'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/q/.local/bin:/home/q/.codex/tmp/arg0/codex-arg0YWRRMN:/opt/ros/humble/bin:/home/q/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/q/.vscode/extensions/openai.chatgpt-26.406.31014-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/HF-N-L-001687:@/tmp/.ICE-unix/2902,unix/HF-N-L-001687:/tmp/.ICE-unix/2902'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b0decd1d_2ac9_4244_a716_50e90290265a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.662'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019d7018-3ec9-72b3-866a-6c7c6246830a'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/q/Algorithm_research/VFH_ws/build/mower_description'), ('VSCODE_CLI', '1'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/q/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43'), ('CLUTTER_IM_MODULE', 'xim'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/q/dev_ws/install/originbot_viz/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_demo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_msgs/local/lib/python3.10/dist-packages:/home/q/dev_ws/install/originbot_gazebo_harmonic/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo_fortress/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_description/lib/python3.10/site-packages:/home/q/dev_ws/install/line_follower_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble'), ('VSCODE_PID', '94827')]), 'shell': False}
+[30.076126] (-) TimerEvent: {}
+[30.081767] (mower_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.082020] (mower_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.082244] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/__pycache__/mower_gazebo.launch.cpython-310.pyc\n'}
+[30.089320] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/mower_gazebo.launch.py\n'}
+[30.096779] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/urdf/mower.urdf\n'}
+[30.103527] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/mower_world.world\n'}
+[30.111175] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/room_world.world\n'}
+[30.122007] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/room_world_open.world\n'}
+[30.135805] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/config/rviz/mower_gazebo.rviz\n'}
+[30.146608] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/package_run_dependencies/mower_description\n'}
+[30.157086] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/parent_prefix_path/mower_description\n'}
+[30.167193] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/ament_prefix_path.sh\n'}
+[30.175779] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/ament_prefix_path.dsv\n'}
+[30.176229] (-) TimerEvent: {}
+[30.184059] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/path.sh\n'}
+[30.191624] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/path.dsv\n'}
+[30.200019] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.bash\n'}
+[30.211854] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.sh\n'}
+[30.220427] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.zsh\n'}
+[30.228176] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.dsv\n'}
+[30.234769] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/package.dsv\n'}
+[30.245213] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/packages/mower_description\n'}
+[30.252612] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/cmake/mower_descriptionConfig.cmake\n'}
+[30.260191] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/cmake/mower_descriptionConfig-version.cmake\n'}
+[30.268102] (mower_description) StdoutLine: {'line': b'-- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/package.xml\n'}
+[30.274818] (mower_description) CommandEnded: {'returncode': 0}
+[30.276282] (-) TimerEvent: {}
+[30.285561] (mower_description) JobEnded: {'identifier': 'mower_description', 'rc': 0}
+[30.286148] (mower_vfh) JobStarted: {'identifier': 'mower_vfh'}
+[30.376379] (-) TimerEvent: {}
+[30.476536] (-) TimerEvent: {}
+[30.576724] (-) TimerEvent: {}
+[30.676914] (-) TimerEvent: {}
+[30.777133] (-) TimerEvent: {}
+[30.877315] (-) TimerEvent: {}
+[30.977497] (-) TimerEvent: {}
+[31.077690] (-) TimerEvent: {}
+[31.177846] (-) TimerEvent: {}
+[31.278058] (-) TimerEvent: {}
+[31.378271] (-) TimerEvent: {}
+[31.478435] (-) TimerEvent: {}
+[31.578592] (-) TimerEvent: {}
+[31.678745] (-) TimerEvent: {}
+[31.778901] (-) TimerEvent: {}
+[31.879095] (-) TimerEvent: {}
+[31.979320] (-) TimerEvent: {}
+[32.079496] (-) TimerEvent: {}
+[32.179711] (-) TimerEvent: {}
+[32.279994] (-) TimerEvent: {}
+[32.380260] (-) TimerEvent: {}
+[32.480547] (-) TimerEvent: {}
+[32.580807] (-) TimerEvent: {}
+[32.681041] (-) TimerEvent: {}
+[32.781294] (-) TimerEvent: {}
+[32.881555] (-) TimerEvent: {}
+[32.981786] (-) TimerEvent: {}
+[33.082113] (-) TimerEvent: {}
+[33.182363] (-) TimerEvent: {}
+[33.282658] (-) TimerEvent: {}
+[33.382925] (-) TimerEvent: {}
+[33.483188] (-) TimerEvent: {}
+[33.583389] (-) TimerEvent: {}
+[33.683629] (-) TimerEvent: {}
+[33.783877] (-) TimerEvent: {}
+[33.884101] (-) TimerEvent: {}
+[33.984363] (-) TimerEvent: {}
+[34.084575] (-) TimerEvent: {}
+[34.184790] (-) TimerEvent: {}
+[34.285013] (-) TimerEvent: {}
+[34.385256] (-) TimerEvent: {}
+[34.485480] (-) TimerEvent: {}
+[34.585712] (-) TimerEvent: {}
+[34.685973] (-) TimerEvent: {}
+[34.786268] (-) TimerEvent: {}
+[34.886564] (-) TimerEvent: {}
+[34.986901] (-) TimerEvent: {}
+[35.087163] (-) TimerEvent: {}
+[35.187389] (-) TimerEvent: {}
+[35.287645] (-) TimerEvent: {}
+[35.387867] (-) TimerEvent: {}
+[35.488112] (-) TimerEvent: {}
+[35.588351] (-) TimerEvent: {}
+[35.688649] (-) TimerEvent: {}
+[35.788895] (-) TimerEvent: {}
+[35.889160] (-) TimerEvent: {}
+[35.989411] (-) TimerEvent: {}
+[36.089713] (-) TimerEvent: {}
+[36.189934] (-) TimerEvent: {}
+[36.290231] (-) TimerEvent: {}
+[36.390493] (-) TimerEvent: {}
+[36.490797] (-) TimerEvent: {}
+[36.591043] (-) TimerEvent: {}
+[36.691477] (-) TimerEvent: {}
+[36.791731] (-) TimerEvent: {}
+[36.891981] (-) TimerEvent: {}
+[36.992354] (-) TimerEvent: {}
+[37.092655] (-) TimerEvent: {}
+[37.192945] (-) TimerEvent: {}
+[37.293279] (-) TimerEvent: {}
+[37.393584] (-) TimerEvent: {}
+[37.493831] (-) TimerEvent: {}
+[37.594075] (-) TimerEvent: {}
+[37.694340] (-) TimerEvent: {}
+[37.794619] (-) TimerEvent: {}
+[37.894850] (-) TimerEvent: {}
+[37.995095] (-) TimerEvent: {}
+[38.095337] (-) TimerEvent: {}
+[38.195609] (-) TimerEvent: {}
+[38.295873] (-) TimerEvent: {}
+[38.396153] (-) TimerEvent: {}
+[38.496443] (-) TimerEvent: {}
+[38.596764] (-) TimerEvent: {}
+[38.697077] (-) TimerEvent: {}
+[38.797361] (-) TimerEvent: {}
+[38.897675] (-) TimerEvent: {}
+[38.998025] (-) TimerEvent: {}
+[39.098300] (-) TimerEvent: {}
+[39.198561] (-) TimerEvent: {}
+[39.298812] (-) TimerEvent: {}
+[39.399072] (-) TimerEvent: {}
+[39.499311] (-) TimerEvent: {}
+[39.599661] (-) TimerEvent: {}
+[39.699962] (-) TimerEvent: {}
+[39.800208] (-) TimerEvent: {}
+[39.900468] (-) TimerEvent: {}
+[40.000728] (-) TimerEvent: {}
+[40.100996] (-) TimerEvent: {}
+[40.201283] (-) TimerEvent: {}
+[40.301541] (-) TimerEvent: {}
+[40.401808] (-) TimerEvent: {}
+[40.502070] (-) TimerEvent: {}
+[40.602328] (-) TimerEvent: {}
+[40.702624] (-) TimerEvent: {}
+[40.802917] (-) TimerEvent: {}
+[40.903237] (-) TimerEvent: {}
+[41.003493] (-) TimerEvent: {}
+[41.103738] (-) TimerEvent: {}
+[41.203971] (-) TimerEvent: {}
+[41.304296] (-) TimerEvent: {}
+[41.404548] (-) TimerEvent: {}
+[41.504818] (-) TimerEvent: {}
+[41.605080] (-) TimerEvent: {}
+[41.705295] (-) TimerEvent: {}
+[41.805518] (-) TimerEvent: {}
+[41.905740] (-) TimerEvent: {}
+[42.005924] (-) TimerEvent: {}
+[42.106137] (-) TimerEvent: {}
+[42.206413] (-) TimerEvent: {}
+[42.306671] (-) TimerEvent: {}
+[42.406906] (-) TimerEvent: {}
+[42.507130] (-) TimerEvent: {}
+[42.607424] (-) TimerEvent: {}
+[42.707700] (-) TimerEvent: {}
+[42.807972] (-) TimerEvent: {}
+[42.908209] (-) TimerEvent: {}
+[43.008451] (-) TimerEvent: {}
+[43.108812] (-) TimerEvent: {}
+[43.209112] (-) TimerEvent: {}
+[43.309409] (-) TimerEvent: {}
+[43.409694] (-) TimerEvent: {}
+[43.509910] (-) TimerEvent: {}
+[43.610152] (-) TimerEvent: {}
+[43.710402] (-) TimerEvent: {}
+[43.810684] (-) TimerEvent: {}
+[43.910898] (-) TimerEvent: {}
+[44.011136] (-) TimerEvent: {}
+[44.111408] (-) TimerEvent: {}
+[44.211781] (-) TimerEvent: {}
+[44.312153] (-) TimerEvent: {}
+[44.412452] (-) TimerEvent: {}
+[44.512728] (-) TimerEvent: {}
+[44.613061] (-) TimerEvent: {}
+[44.713360] (-) TimerEvent: {}
+[44.813718] (-) TimerEvent: {}
+[44.914054] (-) TimerEvent: {}
+[45.014415] (-) TimerEvent: {}
+[45.114755] (-) TimerEvent: {}
+[45.215035] (-) TimerEvent: {}
+[45.315362] (-) TimerEvent: {}
+[45.415693] (-) TimerEvent: {}
+[45.516011] (-) TimerEvent: {}
+[45.616280] (-) TimerEvent: {}
+[45.716561] (-) TimerEvent: {}
+[45.816871] (-) TimerEvent: {}
+[45.917123] (-) TimerEvent: {}
+[46.017386] (-) TimerEvent: {}
+[46.117668] (-) TimerEvent: {}
+[46.217945] (-) TimerEvent: {}
+[46.318325] (-) TimerEvent: {}
+[46.418575] (-) TimerEvent: {}
+[46.518859] (-) TimerEvent: {}
+[46.619166] (-) TimerEvent: {}
+[46.719511] (-) TimerEvent: {}
+[46.819763] (-) TimerEvent: {}
+[46.920008] (-) TimerEvent: {}
+[47.020294] (-) TimerEvent: {}
+[47.120512] (-) TimerEvent: {}
+[47.220760] (-) TimerEvent: {}
+[47.321059] (-) TimerEvent: {}
+[47.421286] (-) TimerEvent: {}
+[47.521510] (-) TimerEvent: {}
+[47.621788] (-) TimerEvent: {}
+[47.722070] (-) TimerEvent: {}
+[47.822307] (-) TimerEvent: {}
+[47.922528] (-) TimerEvent: {}
+[48.022783] (-) TimerEvent: {}
+[48.123060] (-) TimerEvent: {}
+[48.223389] (-) TimerEvent: {}
+[48.323677] (-) TimerEvent: {}
+[48.423910] (-) TimerEvent: {}
+[48.524107] (-) TimerEvent: {}
+[48.624318] (-) TimerEvent: {}
+[48.724597] (-) TimerEvent: {}
+[48.824901] (-) TimerEvent: {}
+[48.925156] (-) TimerEvent: {}
+[49.025537] (-) TimerEvent: {}
+[49.125857] (-) TimerEvent: {}
+[49.226144] (-) TimerEvent: {}
+[49.326396] (-) TimerEvent: {}
+[49.426546] (-) TimerEvent: {}
+[49.526707] (-) TimerEvent: {}
+[49.626899] (-) TimerEvent: {}
+[49.727060] (-) TimerEvent: {}
+[49.827208] (-) TimerEvent: {}
+[49.927379] (-) TimerEvent: {}
+[50.027601] (-) TimerEvent: {}
+[50.127905] (-) TimerEvent: {}
+[50.228231] (-) TimerEvent: {}
+[50.328547] (-) TimerEvent: {}
+[50.428804] (-) TimerEvent: {}
+[50.528959] (-) TimerEvent: {}
+[50.629173] (-) TimerEvent: {}
+[50.729528] (-) TimerEvent: {}
+[50.829794] (-) TimerEvent: {}
+[50.930025] (-) TimerEvent: {}
+[51.030302] (-) TimerEvent: {}
+[51.130559] (-) TimerEvent: {}
+[51.230867] (-) TimerEvent: {}
+[51.331134] (-) TimerEvent: {}
+[51.431355] (-) TimerEvent: {}
+[51.531546] (-) TimerEvent: {}
+[51.631766] (-) TimerEvent: {}
+[51.731977] (-) TimerEvent: {}
+[51.832345] (-) TimerEvent: {}
+[51.932565] (-) TimerEvent: {}
+[52.032799] (-) TimerEvent: {}
+[52.133034] (-) TimerEvent: {}
+[52.233316] (-) TimerEvent: {}
+[52.333580] (-) TimerEvent: {}
+[52.433892] (-) TimerEvent: {}
+[52.534178] (-) TimerEvent: {}
+[52.634416] (-) TimerEvent: {}
+[52.734695] (-) TimerEvent: {}
+[52.834961] (-) TimerEvent: {}
+[52.935226] (-) TimerEvent: {}
+[53.035439] (-) TimerEvent: {}
+[53.135706] (-) TimerEvent: {}
+[53.235981] (-) TimerEvent: {}
+[53.336276] (-) TimerEvent: {}
+[53.436507] (-) TimerEvent: {}
+[53.536731] (-) TimerEvent: {}
+[53.636975] (-) TimerEvent: {}
+[53.737182] (-) TimerEvent: {}
+[53.837473] (-) TimerEvent: {}
+[53.937784] (-) TimerEvent: {}
+[54.038097] (-) TimerEvent: {}
+[54.138426] (-) TimerEvent: {}
+[54.238795] (-) TimerEvent: {}
+[54.339074] (-) TimerEvent: {}
+[54.439328] (-) TimerEvent: {}
+[54.539660] (-) TimerEvent: {}
+[54.639957] (-) TimerEvent: {}
+[54.740268] (-) TimerEvent: {}
+[54.840503] (-) TimerEvent: {}
+[54.940767] (-) TimerEvent: {}
+[55.041023] (-) TimerEvent: {}
+[55.141323] (-) TimerEvent: {}
+[55.241599] (-) TimerEvent: {}
+[55.341825] (-) TimerEvent: {}
+[55.442140] (-) TimerEvent: {}
+[55.542439] (-) TimerEvent: {}
+[55.642706] (-) TimerEvent: {}
+[55.742955] (-) TimerEvent: {}
+[55.843210] (-) TimerEvent: {}
+[55.943478] (-) TimerEvent: {}
+[56.043704] (-) TimerEvent: {}
+[56.143979] (-) TimerEvent: {}
+[56.244271] (-) TimerEvent: {}
+[56.344530] (-) TimerEvent: {}
+[56.444796] (-) TimerEvent: {}
+[56.545052] (-) TimerEvent: {}
+[56.645295] (-) TimerEvent: {}
+[56.745576] (-) TimerEvent: {}
+[56.845886] (-) TimerEvent: {}
+[56.946167] (-) TimerEvent: {}
+[57.046393] (-) TimerEvent: {}
+[57.146618] (-) TimerEvent: {}
+[57.246879] (-) TimerEvent: {}
+[57.347141] (-) TimerEvent: {}
+[57.447395] (-) TimerEvent: {}
+[57.547639] (-) TimerEvent: {}
+[57.647925] (-) TimerEvent: {}
+[57.748215] (-) TimerEvent: {}
+[57.848492] (-) TimerEvent: {}
+[57.948762] (-) TimerEvent: {}
+[58.048965] (-) TimerEvent: {}
+[58.149184] (-) TimerEvent: {}
+[58.249490] (-) TimerEvent: {}
+[58.349734] (-) TimerEvent: {}
+[58.449987] (-) TimerEvent: {}
+[58.550267] (-) TimerEvent: {}
+[58.650526] (-) TimerEvent: {}
+[58.750798] (-) TimerEvent: {}
+[58.851047] (-) TimerEvent: {}
+[58.951255] (-) TimerEvent: {}
+[59.051439] (-) TimerEvent: {}
+[59.151647] (-) TimerEvent: {}
+[59.251906] (-) TimerEvent: {}
+[59.352171] (-) TimerEvent: {}
+[59.452441] (-) TimerEvent: {}
+[59.552682] (-) TimerEvent: {}
+[59.652923] (-) TimerEvent: {}
+[59.753165] (-) TimerEvent: {}
+[59.853434] (-) TimerEvent: {}
+[59.953713] (-) TimerEvent: {}
+[60.053937] (-) TimerEvent: {}
+[60.154112] (-) TimerEvent: {}
+[60.254337] (-) TimerEvent: {}
+[60.354598] (-) TimerEvent: {}
+[60.454773] (-) TimerEvent: {}
+[60.554944] (-) TimerEvent: {}
+[60.655089] (-) TimerEvent: {}
+[60.755253] (-) TimerEvent: {}
+[60.761917] (mower_vfh) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/q/Algorithm_research/VFH_ws/build/mower_vfh/build', '--no-deps', 'symlink_data'], 'cwd': '/home/q/Algorithm_research/VFH_ws/build/mower_vfh', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/q/Algorithm_research/VFH_ws', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7897/', 'CODEX_CI': '1', 'no_proxy': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1', 'LANGUAGE': 'zh_CN:en', 'USER': 'q', 'LC_TIME': 'zh_CN.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","messagesFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43/nls.messages.json","corruptMarkerFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/tcf.json","_cacheRoot":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn","_resolvedLanguagePackCoreLocation":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/07ff9d6178ede9a1bd12ad3399074d726ebe6e43","_corruptedFile":"/home/q/.config/Code/clp/03e9a0e800a6ec55d37f45386a22dcdf.zh-cn/corrupted.info"}', 'all_proxy': 'socks://127.0.0.1:7897/', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/q/dev_ws/install/originbot_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/q', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,::1', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-2271aa5c-1.11-main.sock', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'LC_CTYPE': 'C.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2902', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf', 'COLORTERM': '', 'NODE_TLS_REJECT_UNAUTHORIZED': '0', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'https_proxy': 'http://127.0.0.1:7897/', 'COLCON_PREFIX_PATH': '/home/q/dev_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'q', 'ALL_PROXY': 'socks://127.0.0.1:7897/', 'http_proxy': 'http://127.0.0.1:7897/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'q', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/q/.local/bin:/home/q/.codex/tmp/arg0/codex-arg0YWRRMN:/opt/ros/humble/bin:/home/q/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/q/.vscode/extensions/openai.chatgpt-26.406.31014-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/HF-N-L-001687:@/tmp/.ICE-unix/2902,unix/HF-N-L-001687:/tmp/.ICE-unix/2902', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b0decd1d_2ac9_4244_a716_50e90290265a', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.662', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/q/Algorithm_research/VFH_ws/install/mower_description:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/originbot_app:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019d7018-3ec9-72b3-866a-6c7c6246830a', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/q/Algorithm_research/VFH_ws/build/mower_vfh', 'VSCODE_CLI': '1', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/q/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'CLUTTER_IM_MODULE': 'xim', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=af08e240c58c42566348928169d676cf', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/q/Algorithm_research/VFH_ws/build/mower_vfh/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_viz/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_demo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_msgs/local/lib/python3.10/dist-packages:/home/q/dev_ws/install/originbot_gazebo_harmonic/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo_fortress/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_gazebo/lib/python3.10/site-packages:/home/q/dev_ws/install/originbot_description/lib/python3.10/site-packages:/home/q/dev_ws/install/line_follower_model/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'CMAKE_PREFIX_PATH': '/home/q/Algorithm_research/VFH_ws/install/mower_description:/home/q/dev_ws/install/originbot_send_goal:/home/q/dev_ws/install/originbot_qrcode_detect:/home/q/dev_ws/install/originbot_navigation:/home/q/dev_ws/install/originbot_msgs:/home/q/dev_ws/install/originbot_app', 'VSCODE_PID': '94827'}, 'shell': False}
+[60.855354] (-) TimerEvent: {}
+[60.951295] (mower_vfh) StdoutLine: {'line': b'running develop\n'}
+[60.955437] (-) TimerEvent: {}
+[61.055599] (-) TimerEvent: {}
+[61.066902] (mower_vfh) StdoutLine: {'line': b'running egg_info\n'}
+[61.067109] (mower_vfh) StdoutLine: {'line': b'creating mower_vfh.egg-info\n'}
+[61.067299] (mower_vfh) StdoutLine: {'line': b'writing mower_vfh.egg-info/PKG-INFO\n'}
+[61.067376] (mower_vfh) StdoutLine: {'line': b'writing dependency_links to mower_vfh.egg-info/dependency_links.txt\n'}
+[61.067477] (mower_vfh) StdoutLine: {'line': b'writing entry points to mower_vfh.egg-info/entry_points.txt\n'}
+[61.067545] (mower_vfh) StdoutLine: {'line': b'writing requirements to mower_vfh.egg-info/requires.txt\n'}
+[61.067614] (mower_vfh) StdoutLine: {'line': b'writing top-level names to mower_vfh.egg-info/top_level.txt\n'}
+[61.067689] (mower_vfh) StdoutLine: {'line': b"writing manifest file 'mower_vfh.egg-info/SOURCES.txt'\n"}
+[61.068553] (mower_vfh) StdoutLine: {'line': b"reading manifest file 'mower_vfh.egg-info/SOURCES.txt'\n"}
+[61.068893] (mower_vfh) StdoutLine: {'line': b"writing manifest file 'mower_vfh.egg-info/SOURCES.txt'\n"}
+[61.069820] (mower_vfh) StdoutLine: {'line': b'running build_ext\n'}
+[61.069950] (mower_vfh) StdoutLine: {'line': b'Creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/python3.10/site-packages/mower-vfh.egg-link (link to .)\n'}
+[61.070440] (mower_vfh) StdoutLine: {'line': b'Installing depth_vfh_controller script to /home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/mower_vfh\n'}
+[61.070596] (mower_vfh) StdoutLine: {'line': b'\n'}
+[61.070794] (mower_vfh) StdoutLine: {'line': b'Installed /home/q/Algorithm_research/VFH_ws/build/mower_vfh\n'}
+[61.070923] (mower_vfh) StdoutLine: {'line': b'running symlink_data\n'}
+[61.070990] (mower_vfh) StdoutLine: {'line': b'creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index\n'}
+[61.071059] (mower_vfh) StdoutLine: {'line': b'creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index\n'}
+[61.071125] (mower_vfh) StdoutLine: {'line': b'creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/packages\n'}
+[61.071191] (mower_vfh) StdoutLine: {'line': b'symbolically linking /home/q/Algorithm_research/VFH_ws/build/mower_vfh/resource/mower_vfh -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/packages\n'}
+[61.071267] (mower_vfh) StdoutLine: {'line': b'symbolically linking /home/q/Algorithm_research/VFH_ws/build/mower_vfh/package.xml -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh\n'}
+[61.071334] (mower_vfh) StdoutLine: {'line': b'creating /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/launch\n'}
+[61.071398] (mower_vfh) StdoutLine: {'line': b'symbolically linking /home/q/Algorithm_research/VFH_ws/build/mower_vfh/launch/vfh_gazebo.launch.py -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/launch\n'}
+[61.089151] (mower_vfh) CommandEnded: {'returncode': 0}
+[61.094285] (mower_vfh) JobEnded: {'identifier': 'mower_vfh', 'rc': 0}
+[61.094878] (-) EventReactorShutdown: {}

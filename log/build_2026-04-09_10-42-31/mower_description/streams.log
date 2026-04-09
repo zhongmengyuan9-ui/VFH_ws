@@ -1,0 +1,105 @@
+[0.011s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_description -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_description
+[0.025s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.141s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.154s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.188s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[0.188s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.214s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.217s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.223s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.234s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.245s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.280s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.283s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.308s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.319s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.335s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.343s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.352s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.423s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.451s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.452s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.456s] -- Searching for dependencies of ignition-math6
+[0.457s] -- Looking for OGRE...
+[0.463s] -- Found Ogre Ghadamon (1.9.0)
+[0.463s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.473s] -- Looking for OGRE_Paging...
+[0.473s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.473s] -- Looking for OGRE_Terrain...
+[0.473s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.473s] -- Looking for OGRE_Property...
+[0.473s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.473s] -- Looking for OGRE_RTShaderSystem...
+[0.473s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.473s] -- Looking for OGRE_Volume...
+[0.474s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.474s] -- Looking for OGRE_Overlay...
+[0.474s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.554s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.554s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.555s] -- Searching for dependencies of ignition-transport8
+[0.571s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.582s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.588s] -- Checking for module 'libzmq >= 4'
+[0.607s] --   Found libzmq , version 4.3.4
+[0.657s] -- Checking for module 'uuid'
+[0.671s] --   Found uuid, version 2.37.2
+[0.708s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.708s] -- Searching for dependencies of ignition-msgs5
+[0.727s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.734s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.734s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.735s] -- Searching for dependencies of ignition-common3
+[0.735s] -- Looking for dlfcn.h - found
+[0.735s] -- Looking for libdl - found
+[0.745s] -- Searching for <ignition-common3> component [graphics]
+[0.746s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.746s] -- Searching for dependencies of ignition-common3-graphics
+[0.747s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.747s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.748s] -- Searching for dependencies of ignition-fuel_tools4
+[0.793s] -- Checking for module 'jsoncpp'
+[0.807s] --   Found jsoncpp, version 1.9.5
+[0.850s] -- Checking for module 'libzip'
+[0.866s] --   Found libzip, version 1.7.3
+[0.903s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.903s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.904s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.905s] -- Gazebo version: 11.10
+[0.908s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.005s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.006s] -- Added test 'lint_cmake' to check CMake code style
+[1.006s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.008s] -- Added test 'xmllint' to check XML markup files
+[1.012s] -- Configuring done
+[1.020s] -- Generating done
+[1.025s] -- Build files have been written to: /home/q/Algorithm_research/VFH_ws/build/mower_description
+[1.032s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_description -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_description
+[1.034s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_description -- -j24 -l24
+[1.083s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_description -- -j24 -l24
+[1.093s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_description
+[1.102s] -- Install configuration: ""
+[1.103s] -- Execute custom install script
+[1.103s] -- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/__pycache__/mower_gazebo.launch.cpython-310.pyc
+[1.114s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/launch/mower_gazebo.launch.py
+[1.115s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/urdf/mower.urdf
+[1.115s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/mower_world.world
+[1.115s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/room_world.world
+[1.116s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/worlds/room_world_open.world
+[1.117s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/config/rviz/mower_gazebo.rviz
+[1.117s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/package_run_dependencies/mower_description
+[1.117s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/parent_prefix_path/mower_description
+[1.118s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/ament_prefix_path.sh
+[1.118s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/ament_prefix_path.dsv
+[1.119s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/path.sh
+[1.119s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/environment/path.dsv
+[1.120s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.bash
+[1.120s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.sh
+[1.121s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.zsh
+[1.121s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/local_setup.dsv
+[1.121s] -- Symlinking: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/package.dsv
+[1.131s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/ament_index/resource_index/packages/mower_description
+[1.131s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/cmake/mower_descriptionConfig.cmake
+[1.132s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/cmake/mower_descriptionConfig-version.cmake
+[1.132s] -- Up-to-date symlink: /home/q/Algorithm_research/VFH_ws/install/mower_description/share/mower_description/package.xml
+[1.134s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/q/dev_ws/install/originbot_viz:/home/q/dev_ws/install/originbot_demo:/home/q/dev_ws/install/originbot_gazebo_harmonic:/home/q/dev_ws/install/originbot_gazebo_fortress:/home/q/dev_ws/install/originbot_gazebo:/home/q/dev_ws/install/originbot_description:/home/q/dev_ws/install/line_follower_model:/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_description
