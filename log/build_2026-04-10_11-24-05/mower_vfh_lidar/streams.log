@@ -1,0 +1,24 @@
+[1.116s] Invoking command in '/home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mower_vfh_lidar build --build-base /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/build install --record /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/install.log --single-version-externally-managed install_data
+[1.347s] running egg_info
+[1.348s] writing ../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/PKG-INFO
+[1.348s] writing dependency_links to ../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/dependency_links.txt
+[1.348s] writing entry points to ../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/entry_points.txt
+[1.348s] writing requirements to ../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/requires.txt
+[1.348s] writing top-level names to ../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/top_level.txt
+[1.350s] reading manifest file '../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/SOURCES.txt'
+[1.350s] writing manifest file '../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info/SOURCES.txt'
+[1.350s] running build
+[1.350s] running build_py
+[1.350s] copying mower_vfh_lidar/lidar_vfh_controller.py -> /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/build/lib/mower_vfh_lidar
+[1.351s] running install
+[1.351s] running install_lib
+[1.351s] copying /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/build/lib/mower_vfh_lidar/lidar_vfh_controller.py -> /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/python3.10/site-packages/mower_vfh_lidar
+[1.356s] byte-compiling /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/python3.10/site-packages/mower_vfh_lidar/lidar_vfh_controller.py to lidar_vfh_controller.cpython-310.pyc
+[1.363s] running install_data
+[1.363s] running install_egg_info
+[1.364s] removing '/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/python3.10/site-packages/mower_vfh_lidar-0.0.1-py3.10.egg-info' (and everything under it)
+[1.364s] Copying ../../build/mower_vfh_lidar/mower_vfh_lidar.egg-info to /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/python3.10/site-packages/mower_vfh_lidar-0.0.1-py3.10.egg-info
+[1.366s] running install_scripts
+[1.381s] Installing lidar_vfh_controller script to /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/mower_vfh_lidar
+[1.381s] writing list of installed files to '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/install.log'
+[1.397s] Invoked command in '/home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar' returned '0': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mower_vfh_lidar build --build-base /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/build install --record /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar/install.log --single-version-externally-managed install_data
