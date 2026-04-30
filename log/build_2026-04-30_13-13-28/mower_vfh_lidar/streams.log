@@ -1,0 +1,76 @@
+[0.009s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar
+[0.170s] -- The C compiler identification is GNU 11.4.0
+[0.334s] -- The CXX compiler identification is GNU 11.4.0
+[0.343s] -- Detecting C compiler ABI info
+[0.525s] -- Detecting C compiler ABI info - done
+[0.536s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.536s] -- Detecting C compile features
+[0.537s] -- Detecting C compile features - done
+[0.542s] -- Detecting CXX compiler ABI info
+[0.749s] -- Detecting CXX compiler ABI info - done
+[0.762s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.762s] -- Detecting CXX compile features
+[0.763s] -- Detecting CXX compile features - done
+[0.766s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.930s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.018s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[1.072s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.078s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.089s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.104s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.124s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.183s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.186s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.287s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.314s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.356s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.369s] -- Looking for pthread.h
+[1.544s] -- Looking for pthread.h - found
+[1.544s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.731s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.732s] -- Found Threads: TRUE  
+[1.797s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.813s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.832s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.860s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.981s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.981s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar/include>
+[1.981s] -- Configured cppcheck exclude dirs and/or files: 
+[1.981s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.981s] -- Added test 'lint_cmake' to check CMake code style
+[1.982s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.984s] -- Added test 'uncrustify' to check C / C++ code style
+[1.984s] -- Configured uncrustify additional arguments: 
+[1.984s] -- Added test 'xmllint' to check XML markup files
+[1.988s] -- Configuring done
+[1.999s] -- Generating done
+[2.006s] -- Build files have been written to: /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar
+[2.018s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar
+[2.020s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar -- -j24 -l24
+[2.089s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_vfh_controller.dir/src/lidar_vfh_controller.cpp.o[0m
+[12.631s] [100%] [32m[1mLinking CXX executable lidar_vfh_controller[0m
+[13.159s] [100%] Built target lidar_vfh_controller
+[13.171s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar -- -j24 -l24
+[13.172s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar
+[13.182s] -- Install configuration: ""
+[13.182s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/mower_vfh_lidar/lidar_vfh_controller
+[13.195s] -- Set runtime path of "/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/lib/mower_vfh_lidar/lidar_vfh_controller" to ""
+[13.195s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/launch
+[13.195s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/launch/vfh_gazebo.launch.py
+[13.195s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/launch/lidar_vfh_gazebo.launch.py
+[13.195s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/ament_index/resource_index/package_run_dependencies/mower_vfh_lidar
+[13.196s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/ament_index/resource_index/parent_prefix_path/mower_vfh_lidar
+[13.196s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/environment/ament_prefix_path.sh
+[13.196s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/environment/ament_prefix_path.dsv
+[13.197s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/environment/path.sh
+[13.197s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/environment/path.dsv
+[13.197s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/local_setup.bash
+[13.198s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/local_setup.sh
+[13.198s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/local_setup.zsh
+[13.198s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/local_setup.dsv
+[13.198s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/package.dsv
+[13.198s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/ament_index/resource_index/packages/mower_vfh_lidar
+[13.199s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/cmake/mower_vfh_lidarConfig.cmake
+[13.199s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/cmake/mower_vfh_lidarConfig-version.cmake
+[13.199s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar/share/mower_vfh_lidar/package.xml
+[13.201s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar

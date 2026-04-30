@@ -1,34 +1,78 @@
 <?xml version="1.0"?>
-<robot name="mower" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="gmower" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- 颜色定义 -->
+  <material name="graphite">
+    <color rgba="0.16 0.18 0.20 1.0"/>
+  </material>
+  <material name="snow_white">
+    <color rgba="0.92 0.93 0.95 1.0"/>
+  </material>
+  <material name="accent_orange">
+    <color rgba="0.95 0.44 0.08 1.0"/>
+  </material>
+  <material name="signal_yellow">
+    <color rgba="0.95 0.83 0.14 1.0"/>
+  </material>
+  <material name="metal_silver">
+    <color rgba="0.72 0.74 0.78 1.0"/>
+  </material>
+  <material name="wheel_rubber">
+    <color rgba="0.04 0.04 0.04 1.0"/>
+  </material>
+  <material name="sensor_black">
+    <color rgba="0.08 0.09 0.11 1.0"/>
+  </material>
   <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
-  <material name="red">
-    <color rgba="0.8 0.0 0.0 1.0"/>
-  </material>
-  <material name="blue">
-    <color rgba="0.0 0.0 0.8 1.0"/>
-  </material>
-  <material name="green">
-    <color rgba="0.0 0.8 0.0 1.0"/>
+  <material name="silver">
+    <color rgba="0.75 0.75 0.75 1.0"/>
   </material>
 
-  <!-- 底盘 -->
+  <!-- 底盘（多层涂装） -->
   <link name="base_link">
     <visual>
       <geometry>
-        <box size="0.5 0.3 0.15"/>
+        <box size="0.5665 0.37 0.12"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.075"/>
-      <material name="green"/>
+      <origin rpy="0 0 0" xyz="0.12 0 0.06"/>
+      <material name="graphite">
+        <color rgba="0.16 0.18 0.20 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.48 0.29 0.03"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.12 0 0.135"/>
+      <material name="snow_white">
+        <color rgba="0.92 0.93 0.95 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.54 0.015 0.025"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.12 0.142 0.092"/>
+      <material name="accent_orange">
+        <color rgba="0.95 0.44 0.08 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.48 0.015 0.025"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.12 -0.142 0.092"/>
+      <material name="accent_orange">
+        <color rgba="0.95 0.44 0.08 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
-        <box size="0.5 0.3 0.15"/>
+        <box size="0.5665 0.37 0.15"/>
       </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0.075"/>
+      <origin rpy="0 0 0" xyz="0.12 0 0.075"/>
     </collision>
     <inertial>
       <mass value="10.0"/>
@@ -40,14 +84,25 @@
   <link name="left_wheel">
     <visual>
       <geometry>
-        <cylinder radius="0.1" length="0.05"/>
+        <cylinder radius="0.11" length="0.05"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
-      <material name="black"/>
+      <material name="wheel_rubber">
+        <color rgba="0.04 0.04 0.04 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder radius="0.060" length="0.052"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="metal_silver">
+        <color rgba="0.72 0.74 0.78 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
-        <cylinder radius="0.1" length="0.05"/>
+        <cylinder radius="0.11" length="0.05"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
     </collision>
@@ -61,14 +116,25 @@
   <link name="right_wheel">
     <visual>
       <geometry>
-        <cylinder radius="0.1" length="0.05"/>
+        <cylinder radius="0.11" length="0.05"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
-      <material name="black"/>
+      <material name="wheel_rubber">
+        <color rgba="0.04 0.04 0.04 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder radius="0.060" length="0.052"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="metal_silver">
+        <color rgba="0.72 0.74 0.78 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
-        <cylinder radius="0.1" length="0.05"/>
+        <cylinder radius="0.11" length="0.05"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
     </collision>
@@ -82,14 +148,25 @@
   <link name="front_left_caster">
     <visual>
       <geometry>
-        <cylinder radius="0.08" length="0.03"/>
+        <cylinder radius="0.045" length="0.03"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
-      <material name="blue"/>
+      <material name="wheel_rubber">
+        <color rgba="0.04 0.04 0.04 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder radius="0.028" length="0.032"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="metal_silver">
+        <color rgba="0.72 0.74 0.78 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
-        <cylinder radius="0.08" length="0.03"/>
+        <cylinder radius="0.045" length="0.03"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
     </collision>
@@ -103,14 +180,25 @@
   <link name="front_right_caster">
     <visual>
       <geometry>
-        <cylinder radius="0.08" length="0.03"/>
+        <cylinder radius="0.045" length="0.03"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
-      <material name="blue"/>
+      <material name="wheel_rubber">
+        <color rgba="0.04 0.04 0.04 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder radius="0.028" length="0.032"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="metal_silver">
+        <color rgba="0.72 0.74 0.78 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
-        <cylinder radius="0.08" length="0.03"/>
+        <cylinder radius="0.045" length="0.03"/>
       </geometry>
       <origin rpy="1.5708 0 0" xyz="0 0 0"/>
     </collision>
@@ -120,13 +208,15 @@
     </inertial>
   </link>
 
-  <!-- 雷达支架（中心短圆柱，不要太高） -->
+  <!-- 雷达支架（中心短圆柱） -->
   <link name="lidar_mast_link">
     <visual>
       <geometry>
         <cylinder radius="0.02" length="0.04"/>
       </geometry>
-      <material name="black"/>
+      <material name="sensor_black">
+        <color rgba="0.08 0.09 0.11 1.0"/>
+      </material>
     </visual>
     <collision>
       <geometry>
@@ -145,7 +235,18 @@
       <geometry>
         <box size="0.1 0.1 0.05"/>
       </geometry>
-      <material name="red"/>
+      <material name="sensor_black">
+        <color rgba="0.08 0.09 0.11 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.102 0.102 0.012"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0.018"/>
+      <material name="accent_orange">
+        <color rgba="0.95 0.44 0.08 1.0"/>
+      </material>
     </visual>
     <inertial>
       <mass value="0.1"/>
@@ -159,7 +260,9 @@
       <geometry>
         <box size="0.08 0.03 0.03"/>
       </geometry>
-      <material name="red"/>
+      <material name="sensor_black">
+        <color rgba="0.08 0.09 0.11 1.0"/>
+      </material>
     </visual>
     <inertial>
       <mass value="0.1"/>
@@ -178,7 +281,18 @@
       <geometry>
         <box size="0.04 0.02 0.02"/>
       </geometry>
-      <material name="red"/>
+      <material name="metal_silver">
+        <color rgba="0.72 0.74 0.78 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.005 0.02 0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.018 0 0"/>
+      <material name="sensor_black">
+        <color rgba="0.08 0.09 0.11 1.0"/>
+      </material>
     </visual>
     <inertial>
       <mass value="0.05"/>
@@ -192,7 +306,9 @@
       <geometry>
         <box size="0.02 0.02 0.01"/>
       </geometry>
-      <material name="black"/>
+      <material name="sensor_black">
+        <color rgba="0.08 0.09 0.11 1.0"/>
+      </material>
     </visual>
     <inertial>
       <mass value="0.02"/>
@@ -207,7 +323,18 @@
         <box size="0.1 0.3 0.05"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0.25 0 0.025"/>
-      <material name="red"/>
+      <material name="signal_yellow">
+        <color rgba="0.95 0.83 0.14 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.105 0.28 0.012"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.275 0 0.04"/>
+      <material name="sensor_black">
+        <color rgba="0.08 0.09 0.11 1.0"/>
+      </material>
     </visual>
     <collision name="bumper_link_collision">
       <geometry>
@@ -221,6 +348,97 @@
     </inertial>
   </link>
 
+  <!-- 切割电机主体（缩小） -->
+  <link name="cutting_motor_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.03" length="0.03"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.03" length="0.03"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <!-- 刀片1 -->
+  <link name="blade1_link">
+    <visual>
+      <geometry>
+        <box size="0.18 0.01 0.005"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="silver">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.18 0.01 0.005"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- 刀片2 -->
+  <link name="blade2_link">
+    <visual>
+      <geometry>
+        <box size="0.18 0.01 0.005"/>
+      </geometry>
+      <origin rpy="0 0 1.047" xyz="0 0 0"/>
+      <material name="silver">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.18 0.01 0.005"/>
+      </geometry>
+      <origin rpy="0 0 1.047" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- 刀片3 -->
+  <link name="blade3_link">
+    <visual>
+      <geometry>
+        <box size="0.18 0.01 0.005"/>
+      </geometry>
+      <origin rpy="0 0 2.094" xyz="0 0 0"/>
+      <material name="silver">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.18 0.01 0.005"/>
+      </geometry>
+      <origin rpy="0 0 2.094" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+
   <!-- 关节：左驱动轮 -->
   <joint name="left_wheel_joint" type="continuous">
     <parent link="base_link"/>
@@ -228,10 +446,10 @@
     <!-- REP-103: +Y is left. Place left wheel on +Y. -->
     <!-- Keep chassis clearance above ground:
          base_link is the chassis bottom plane, so wheel_center_z = wheel_radius - clearance -->
-    <origin rpy="0 0 0" xyz="-0.2 0.2 0.07"/>
+    <origin rpy="0 0 0" xyz="0 0.16 0.03"/>
     <axis xyz="0 1 0"/>
     <limit effort="100" velocity="10"/>
-    <dynamics damping="1.0" friction="1.0"/>
+    <dynamics damping="0.05" friction="0.05"/>
   </joint>
 
   <!-- 关节：右驱动轮 -->
@@ -240,10 +458,10 @@
     <child link="right_wheel"/>
     <!-- REP-103: +Y is left. Place right wheel on -Y. -->
     <!-- Keep chassis clearance above ground -->
-    <origin rpy="0 0 0" xyz="-0.2 -0.2 0.07"/>
+    <origin rpy="0 0 0" xyz="0 -0.16 0.03"/>
     <axis xyz="0 1 0"/>
     <limit effort="100" velocity="10"/>
-    <dynamics damping="1.0" friction="1.0"/>
+    <dynamics damping="0.05" friction="0.05"/>
   </joint>
 
   <!-- 关节：左前支撑轮（可滚动） -->
@@ -253,10 +471,10 @@
     <!-- Push outward so it doesn't intersect the chassis, and set z to caster radius. -->
     <!-- REP-103: +Y is left. Place front-left caster on +Y. -->
     <!-- caster_center_z = caster_radius - clearance -->
-    <origin rpy="0 0 0" xyz="0.15 0.18 0.05"/>
+    <origin rpy="0 0 0" xyz="0.30 0.0925 -0.035"/>
     <axis xyz="0 1 0"/>
     <limit effort="20" velocity="20"/>
-    <dynamics damping="0.2" friction="0.2"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
 
   <!-- 关节：右前支撑轮（可滚动） -->
@@ -264,10 +482,10 @@
     <parent link="base_link"/>
     <child link="front_right_caster"/>
     <!-- REP-103: +Y is left. Place front-right caster on -Y. -->
-    <origin rpy="0 0 0" xyz="0.15 -0.18 0.05"/>
+    <origin rpy="0 0 0" xyz="0.30 -0.0925 -0.035"/>
     <axis xyz="0 1 0"/>
     <limit effort="20" velocity="20"/>
-    <dynamics damping="0.2" friction="0.2"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
 
   <!-- 关节：雷达支架（位于车体中心、上表面） -->
@@ -275,7 +493,7 @@
     <parent link="base_link"/>
     <child link="lidar_mast_link"/>
     <!-- base_link 的底盘顶面约在 z=0.15，支架长度 0.04 -->
-    <origin rpy="0 0 0" xyz="0.0 0.0 0.17"/>
+    <origin rpy="0 0 0" xyz="0.12 0.0 0.17"/>
   </joint>
 
   <!-- 关节：激光雷达 -->
@@ -291,7 +509,7 @@
     <parent link="base_link"/>
     <child link="camera_link"/>
     <!-- 放在车体上表面前方 -->
-    <origin rpy="0 0 0" xyz="0.22 0 0.165"/>
+    <origin rpy="0 0 0" xyz="0.34 0 0.165"/>
   </joint>
 
   <!-- camera_link -> camera_optical_frame 的固定变换 -->
@@ -306,21 +524,52 @@
   <joint name="ultrasonic_joint" type="fixed">
     <parent link="base_link"/>
     <child link="ultrasonic_link"/>
-    <origin rpy="0 0 0" xyz="0.27 0 0.08"/>
+    <origin rpy="0 0 0" xyz="0.39 0 0.08"/>
   </joint>
 
   <!-- 关节：IMU（车体内部） -->
   <joint name="imu_joint" type="fixed">
     <parent link="base_link"/>
     <child link="imu_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0.075"/>
+    <origin rpy="0 0 0" xyz="0.12 0 0.075"/>
   </joint>
 
   <!-- 关节：碰撞传感器 -->
   <joint name="bumper_joint" type="fixed">
     <parent link="base_link"/>
     <child link="bumper_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.12 0 0"/>
+  </joint>
+
+  <!-- 关节：刀片1（固定到电机） -->
+  <joint name="blade1_joint" type="fixed">
+    <parent link="cutting_motor_link"/>
+    <child link="blade1_link"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.016"/>
+  </joint>
+
+  <!-- 关节：刀片2（固定到电机） -->
+  <joint name="blade2_joint" type="fixed">
+    <parent link="cutting_motor_link"/>
+    <child link="blade2_link"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.016"/>
+  </joint>
+
+  <!-- 关节：刀片3（固定到电机） -->
+  <joint name="blade3_joint" type="fixed">
+    <parent link="cutting_motor_link"/>
+    <child link="blade3_link"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.016"/>
+  </joint>
+
+  <!-- 关节：电机旋转 -->
+  <joint name="blade_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="cutting_motor_link"/>
+    <origin rpy="0 0 0" xyz="0.12 0 -0.01"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" velocity="80"/>
+    <dynamics damping="0.5" friction="0.1"/>
   </joint>
 
   <!-- Gazebo 配置：插件和传感器 -->
@@ -328,7 +577,7 @@
     <!-- 差速驱动插件（ROS2 版本） -->
     <plugin name="gazebo_ros_diff_drive" filename="libgazebo_ros_diff_drive.so">
       <ros>
-        <namespace>/mower</namespace>
+        <namespace>/gmower</namespace>
         <remapping>cmd_vel:=/cmd_vel</remapping>
         <remapping>odom:=/odom</remapping>
         <!-- TF topics are just normal topics in ROS2; with a namespace they'd become /mower/tf.
@@ -339,8 +588,8 @@
       <update_rate>30</update_rate>
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
-      <wheel_separation>0.4</wheel_separation>
-      <wheel_diameter>0.2</wheel_diameter>
+      <wheel_separation>0.32</wheel_separation>
+      <wheel_diameter>0.22</wheel_diameter>
       <max_wheel_torque>10</max_wheel_torque>
       <max_wheel_acceleration>1.0</max_wheel_acceleration>
       <!-- Use absolute topics to avoid namespace/remap ambiguity -->
@@ -358,15 +607,26 @@
     <!-- 发布轮子 joint_states（RViz 里看关节/TF 更直观） -->
     <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
       <ros>
-        <namespace>/mower</namespace>
-        <!-- Publish raw joint states from Gazebo; we'll merge/fill missing joints in ROS. -->
-        <remapping>~/out:=/mower/joint_states_raw</remapping>
+        <!-- 发布到全局主题，确保robot_state_publisher能接收到 -->
+        <remapping>~/out:=/joint_states</remapping>
       </ros>
       <update_rate>30</update_rate>
       <joint_name>left_wheel_joint</joint_name>
       <joint_name>right_wheel_joint</joint_name>
       <joint_name>front_left_caster_joint</joint_name>
       <joint_name>front_right_caster_joint</joint_name>
+      <joint_name>blade_joint</joint_name>
+    </plugin>
+  </gazebo>
+
+  <!-- 刀片关节轨迹控制器（ROS2 Humble 可用插件） -->
+  <gazebo>
+    <plugin name="blade_trajectory_controller" filename="libgazebo_ros_joint_pose_trajectory.so">
+      <ros>
+        <namespace>/gmower/blade</namespace>
+      </ros>
+      <update_rate>100.0</update_rate>
+      <joint_name>blade_joint</joint_name>
     </plugin>
   </gazebo>
 
@@ -374,7 +634,7 @@
   <gazebo reference="laser_link">
     <sensor type="ray" name="laser">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>10</update_rate>
       <ray>
         <scan>
@@ -431,7 +691,7 @@
       <!-- 注意：该插件输出 LaserScan；如果你需要 sensor_msgs/Range，可在 ROS 里做一次转换节点 -->
       <plugin name="gazebo_ros_ultrasonic" filename="libgazebo_ros_ray_sensor.so">
         <ros>
-          <namespace>/mower</namespace>
+          <namespace>/gmower</namespace>
           <remapping>~/out:=ultrasonic/scan</remapping>
         </ros>
         <output_type>sensor_msgs/LaserScan</output_type>
@@ -459,7 +719,7 @@
       </camera>
       <plugin name="gazebo_ros_camera" filename="libgazebo_ros_camera.so">
         <ros>
-          <namespace>/mower</namespace>
+          <namespace>/gmower</namespace>
         </ros>
         <camera_name>camera</camera_name>
         <!-- Use optical frame so point cloud axes match RViz expectation -->
@@ -483,7 +743,7 @@
       </imu>
       <plugin name="gazebo_ros_imu" filename="libgazebo_ros_imu_sensor.so">
         <ros>
-          <namespace>/mower</namespace>
+          <namespace>/gmower</namespace>
           <remapping>~/out:=imu/data</remapping>
         </ros>
       </plugin>
@@ -500,35 +760,89 @@
       </contact>
       <plugin name="gazebo_ros_contact_sensor" filename="libgazebo_ros_contact_sensor.so">
         <ros>
-          <namespace>/mower</namespace>
+          <namespace>/gmower</namespace>
         </ros>
         <contact_topic>bumper_contact</contact_topic>
       </plugin>
     </sensor>
   </gazebo>
 
+  <!-- Gazebo 强制材质：避免 URDF 命名材质在 Gazebo 中退化为默认白色 -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Grey</material>
+    <ambient>0.16 0.18 0.20 1</ambient>
+    <diffuse>0.16 0.18 0.20 1</diffuse>
+    <specular>0.05 0.05 0.05 1</specular>
+  </gazebo>
+  <gazebo reference="lidar_mast_link">
+    <material>Gazebo/Black</material>
+    <ambient>0.08 0.09 0.11 1</ambient>
+    <diffuse>0.08 0.09 0.11 1</diffuse>
+    <specular>0.03 0.03 0.03 1</specular>
+  </gazebo>
+  <gazebo reference="laser_link">
+    <material>Gazebo/Black</material>
+    <ambient>0.08 0.09 0.11 1</ambient>
+    <diffuse>0.08 0.09 0.11 1</diffuse>
+    <specular>0.03 0.03 0.03 1</specular>
+  </gazebo>
+  <gazebo reference="camera_link">
+    <material>Gazebo/Black</material>
+    <ambient>0.08 0.09 0.11 1</ambient>
+    <diffuse>0.08 0.09 0.11 1</diffuse>
+    <specular>0.03 0.03 0.03 1</specular>
+  </gazebo>
+  <gazebo reference="ultrasonic_link">
+    <material>Gazebo/Grey</material>
+    <ambient>0.72 0.74 0.78 1</ambient>
+    <diffuse>0.72 0.74 0.78 1</diffuse>
+    <specular>0.10 0.10 0.10 1</specular>
+  </gazebo>
+  <gazebo reference="bumper_link">
+    <material>Gazebo/Yellow</material>
+    <ambient>0.95 0.83 0.14 1</ambient>
+    <diffuse>0.95 0.83 0.14 1</diffuse>
+    <specular>0.05 0.05 0.05 1</specular>
+  </gazebo>
+
   <!-- 物理属性（可选） -->
   <gazebo reference="left_wheel">
+    <material>Gazebo/Black</material>
+    <ambient>0.04 0.04 0.04 1</ambient>
+    <diffuse>0.04 0.04 0.04 1</diffuse>
+    <specular>0.02 0.02 0.02 1</specular>
     <mu1>1.0</mu1>
     <mu2>1.0</mu2>
     <kp>1000000.0</kp>
-    <kd>100.0</kd>
+    <kd>10.0</kd>
   </gazebo>
   <gazebo reference="right_wheel">
+    <material>Gazebo/Black</material>
+    <ambient>0.04 0.04 0.04 1</ambient>
+    <diffuse>0.04 0.04 0.04 1</diffuse>
+    <specular>0.02 0.02 0.02 1</specular>
     <mu1>1.0</mu1>
     <mu2>1.0</mu2>
     <kp>1000000.0</kp>
-    <kd>100.0</kd>
+    <kd>10.0</kd>
   </gazebo>
   <gazebo reference="front_left_caster">
     <!-- Low friction so the front support wheels don't resist turning -->
-    <mu1>0.05</mu1>
-    <mu2>0.05</mu2>
+    <material>Gazebo/Black</material>
+    <ambient>0.04 0.04 0.04 1</ambient>
+    <diffuse>0.04 0.04 0.04 1</diffuse>
+    <specular>0.02 0.02 0.02 1</specular>
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
   </gazebo>
   <gazebo reference="front_right_caster">
     <!-- Low friction so the front support wheels don't resist turning -->
-    <mu1>0.05</mu1>
-    <mu2>0.05</mu2>
+    <material>Gazebo/Black</material>
+    <ambient>0.04 0.04 0.04 1</ambient>
+    <diffuse>0.04 0.04 0.04 1</diffuse>
+    <specular>0.02 0.02 0.02 1</specular>
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
   </gazebo>
 
 </robot>

@@ -1,0 +1,6 @@
+Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar
+Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_vfh_lidar -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_vfh_lidar
+Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar -- -j24 -l24
+Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar -- -j24 -l24
+Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar
+Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_vfh_lidar

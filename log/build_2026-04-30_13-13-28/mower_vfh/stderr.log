@@ -1,0 +1,8 @@
+[01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:[m[K In member function ‘[01m[Kvoid DepthVFHController::process_depth_32fc1(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr, int, int, std::vector<double, std::allocator<double> >&)[m[K’:
+[01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:464:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  464 |         int [01;35m[Kh[m[K = depth_img->height;
+      |             [01;35m[K^[m[K
+[01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:[m[K In member function ‘[01m[Kvoid DepthVFHController::process_depth_16uc1(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr, int, int, std::vector<double, std::allocator<double> >&)[m[K’:
+[01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:501:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  501 |         int [01;35m[Kh[m[K = depth_img->height;
+      |             [01;35m[K^[m[K

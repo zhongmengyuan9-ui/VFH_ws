@@ -1,0 +1,83 @@
+[0.010s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:/opt/ros/humble LD_LIBRARY_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_vfh -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_vfh
+[0.122s] -- The C compiler identification is GNU 11.4.0
+[0.239s] -- The CXX compiler identification is GNU 11.4.0
+[0.249s] -- Detecting C compiler ABI info
+[0.384s] -- Detecting C compiler ABI info - done
+[0.395s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.396s] -- Detecting C compile features
+[0.396s] -- Detecting C compile features - done
+[0.401s] -- Detecting CXX compiler ABI info
+[0.545s] -- Detecting CXX compiler ABI info - done
+[0.557s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.557s] -- Detecting CXX compile features
+[0.557s] -- Detecting CXX compile features - done
+[0.560s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.704s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.796s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.847s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.852s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.864s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.877s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.894s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.941s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.943s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.048s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.073s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.111s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.122s] -- Looking for pthread.h
+[1.266s] -- Looking for pthread.h - found
+[1.267s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.414s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.415s] -- Found Threads: TRUE  
+[1.464s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.477s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.492s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.518s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.627s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.627s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/q/Algorithm_research/VFH_ws/src/mower_vfh/include>
+[1.627s] -- Configured cppcheck exclude dirs and/or files: 
+[1.627s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.628s] -- Added test 'lint_cmake' to check CMake code style
+[1.628s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.630s] -- Added test 'uncrustify' to check C / C++ code style
+[1.630s] -- Configured uncrustify additional arguments: 
+[1.630s] -- Added test 'xmllint' to check XML markup files
+[1.633s] -- Configuring done
+[1.641s] -- Generating done
+[1.648s] -- Build files have been written to: /home/q/Algorithm_research/VFH_ws/build/mower_vfh
+[1.655s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh' returned '0': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:/opt/ros/humble LD_LIBRARY_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/q/Algorithm_research/VFH_ws/src/mower_vfh -DCMAKE_INSTALL_PREFIX=/home/q/Algorithm_research/VFH_ws/install/mower_vfh
+[1.657s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:/opt/ros/humble LD_LIBRARY_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_vfh -- -j24 -l24
+[1.724s] [ 50%] [32mBuilding CXX object CMakeFiles/depth_vfh_controller.dir/src/depth_vfh_controller.cpp.o[0m
+[3.824s] [01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:[m[K In member function ‘[01m[Kvoid DepthVFHController::process_depth_32fc1(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr, int, int, std::vector<double, std::allocator<double> >&)[m[K’:
+[3.824s] [01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:464:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.824s]   464 |         int [01;35m[Kh[m[K = depth_img->height;
+[3.825s]       |             [01;35m[K^[m[K
+[3.825s] [01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:[m[K In member function ‘[01m[Kvoid DepthVFHController::process_depth_16uc1(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr, int, int, std::vector<double, std::allocator<double> >&)[m[K’:
+[3.825s] [01m[K/home/q/Algorithm_research/VFH_ws/src/mower_vfh/src/depth_vfh_controller.cpp:501:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.825s]   501 |         int [01;35m[Kh[m[K = depth_img->height;
+[3.825s]       |             [01;35m[K^[m[K
+[12.607s] [100%] [32m[1mLinking CXX executable depth_vfh_controller[0m
+[13.240s] [100%] Built target depth_vfh_controller
+[13.250s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh' returned '0': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:/opt/ros/humble LD_LIBRARY_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/q/Algorithm_research/VFH_ws/build/mower_vfh -- -j24 -l24
+[13.252s] Invoking command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:/opt/ros/humble LD_LIBRARY_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_vfh
+[13.260s] -- Install configuration: ""
+[13.260s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/mower_vfh/depth_vfh_controller
+[13.275s] -- Set runtime path of "/home/q/Algorithm_research/VFH_ws/install/mower_vfh/lib/mower_vfh/depth_vfh_controller" to ""
+[13.276s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/launch
+[13.276s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/launch/vfh_gazebo.launch.py
+[13.276s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/package_run_dependencies/mower_vfh
+[13.277s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/parent_prefix_path/mower_vfh
+[13.277s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/environment/ament_prefix_path.sh
+[13.277s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/environment/ament_prefix_path.dsv
+[13.278s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/environment/path.sh
+[13.278s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/environment/path.dsv
+[13.278s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/local_setup.bash
+[13.278s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/local_setup.sh
+[13.278s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/local_setup.zsh
+[13.279s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/local_setup.dsv
+[13.279s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/package.dsv
+[13.279s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/ament_index/resource_index/packages/mower_vfh
+[13.279s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/cmake/mower_vfhConfig.cmake
+[13.280s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/cmake/mower_vfhConfig-version.cmake
+[13.280s] -- Installing: /home/q/Algorithm_research/VFH_ws/install/mower_vfh/share/mower_vfh/package.xml
+[13.282s] Invoked command in '/home/q/Algorithm_research/VFH_ws/build/mower_vfh' returned '0': AMENT_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description:/opt/ros/humble LD_LIBRARY_PATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/q/Algorithm_research/VFH_ws/install/mower_description/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/q/Algorithm_research/VFH_ws/build/mower_vfh

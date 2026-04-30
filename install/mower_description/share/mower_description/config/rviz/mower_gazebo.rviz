@@ -26,7 +26,7 @@ Visualization Manager:
       Cell Size: 1
       Class: rviz_default_plugins/Grid
       Color: 160; 160; 164
-      Enabled: true
+      Enabled: false
       Line Style:
         Line Width: 0.029999999329447746
         Value: Lines
@@ -39,7 +39,7 @@ Visualization Manager:
       Plane: XY
       Plane Cell Count: 20
       Reference Frame: <Fixed Frame>
-      Value: true
+      Value: false
     - Class: rviz_default_plugins/TF
       Enabled: false
       Frame Timeout: 10
@@ -169,7 +169,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /mower/camera/depth/points
+        Value: /gmower/camera/points
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -185,7 +185,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /mower/camera/rgb/image_raw
+        Value: /gmower/camera/image_raw
       Value: true
     - Class: rviz_default_plugins/Image
       Enabled: true
@@ -199,7 +199,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /mower/camera/depth/image_raw
+        Value: /gmower/camera/depth/image_raw
       Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
@@ -213,7 +213,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: Intensity
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Max Intensity: 0
@@ -234,7 +234,7 @@ Visualization Manager:
         Value: /scan
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -245,13 +245,6 @@ Visualization Manager:
     - Class: rviz_default_plugins/MoveCamera
     - Class: rviz_default_plugins/Select
     - Class: rviz_default_plugins/FocusCamera
-    - Class: rviz_default_plugins/SetGoal
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /goal_pose
     - Class: rviz_default_plugins/Measure
       Line color: 128; 128; 0
   Transformation:

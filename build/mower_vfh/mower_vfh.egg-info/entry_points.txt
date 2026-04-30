@@ -1,3 +1,0 @@
-[console_scripts]
-depth_vfh_controller = mower_vfh.depth_vfh_controller:main
-

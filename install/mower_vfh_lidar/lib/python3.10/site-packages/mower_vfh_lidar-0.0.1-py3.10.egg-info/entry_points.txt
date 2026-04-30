@@ -1,3 +1,0 @@
-[console_scripts]
-lidar_vfh_controller = mower_vfh_lidar.lidar_vfh_controller:main
-

@@ -10,6 +10,21 @@ find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 find_package(gazebo_ros REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Generate services
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/CuttingMotorControl.srv"
+  DEPENDENCIES std_msgs
+)
+
+# Install Python scripts
+install(PROGRAMS
+  src/cutting_motor_controller.py
+  src/gear_marker_publisher.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # Install non-code resources so `ros2 launch` can find them in the package share dir.
 install(
